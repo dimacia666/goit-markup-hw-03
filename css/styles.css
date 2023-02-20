@@ -9,6 +9,10 @@
     --font-main: 'Roboto', sans-serif;
 }
 
+
+
+/* Base */
+
 body {
     font-family: var(--font-main);
     font-size: 16px;
@@ -19,7 +23,37 @@ body {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+.header {
+    background-color: var(--color-main-bg);
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.section-features {
+    padding: 120px 0 0 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1158px;
+    margin: 0 auto;
 }
 
 
@@ -87,12 +121,14 @@ ul {
 
 .hero {
     background-color: var(--color-main);
+    padding: 188px 0;
 }
 
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
     color: var(--color-main-bg);
+    margin-bottom: 48px;
 }
 
 .hero-button {
@@ -125,16 +161,27 @@ ul {
     font-size: 36px;
     line-height: 1.11;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .section-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
 }
 
 .section-text {
     color: var(--color-secondary);
+}
+
+.team {
+    background-color: #F4F4FD;
 }
 
 
@@ -143,6 +190,7 @@ ul {
 
 .footer {
     background-color: var(--color-main);
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -158,14 +206,20 @@ ul {
 
 .footer-text {
     color: #E7E9FC;
+    margin-top: 16px;
 }
 
 
-/* Portfolio */
+
+/* Portfolio Page */
 
 
 
 /* Hero */
+
+.hero-portfolio {
+    padding: 96px 0 72px 0;
+}
 
 .search {
     padding: 12px 24px;
@@ -216,6 +270,10 @@ ul {
 
 
 /* Design */
+
+.section-design {
+    padding-top: 0;
+}
 
 .design-subtitle {
     font-weight: 500;

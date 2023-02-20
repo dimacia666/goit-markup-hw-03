@@ -15,190 +15,225 @@
       rel="stylesheet"
     />
 
-    <!-- styles -->
+    <!-- Styles -->
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-
   <body>
     <!-- Navigation -->
-    <header>
+
+    <header class="header">
       <nav>
-        <a class="logo" href="./index.html">
-          <span class="accent">Web</span>Studio</a
-        >
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Studio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-        </ul>
+        <div class="container">
+          <a class="logo" href="./index.html">
+            <span class="accent">Web</span>Studio</a
+          >
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+          </ul>
+        </div>
       </nav>
+
+      <!-- Address -->
+
       <address>
-        <ul class="address-list">
-          <li class="address-item">
-            <a class="address-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="address-item">
-            <a class="address-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="address-list">
+            <li class="address-item">
+              <a class="address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </div>
       </address>
     </header>
 
+    <!-- Hero -->
+    <!-- Search -->
+
     <main>
-      <!-- Hero -->
-      <!-- Search -->
+      <section class="hero-portfolio">
+        <div class="container">
+          <ul class="hero-list">
+            <li>
+              <button class="search button-all" type="button">All</button>
+            </li>
+            <li>
+              <button class="search button-website" type="button">
+                Web Site
+              </button>
+            </li>
+            <li>
+              <button class="search button-app" type="button">App</button>
+            </li>
+            <li>
+              <button class="search button-design" type="button">Design</button>
+            </li>
+            <li>
+              <button class="search button-marketing" type="button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <section>
-        <ul class="hero-list">
-          <li>
-            <button class="search button-all" type="button">All</button>
-          </li>
-          <li>
-            <button class="search button-website" type="button">
-              Web Site
-            </button>
-          </li>
-          <li>
-            <button class="search button-app" type="button">App</button>
-          </li>
-          <li>
-            <button class="search button-design" type="button">Design</button>
-          </li>
-          <li>
-            <button class="search button-marketing" type="button">
-              Marketing
-            </button>
-          </li>
-        </ul>
-
-        <!-- Design -->
-
-        <h1 hidden>Design</h1>
-        <ul class="design-list">
-          <li class="design-item">
-            <img
-              class="design-img"
-              src="./images/banking-app.jpg"
-              alt="banking app concept with
+      <!-- Design -->
+      <section class="section section-design">
+        <div class="container">
+          <h1 hidden>Design</h1>
+          <ul class="design-list">
+            <li class="design-item">
+              <img
+                class="design-img"
+                src="./images/banking-app.jpg"
+                alt="banking app concept with
             purple pages"
-              width="360"
-              height="300"
-            />
-            <h2 class="design-subtitle">Banking App Interface Concept</h2>
-            <p class="design-text">App</p>
-          </li>
-
-          <li class="design-item">
-            <img
-              class="design-img"
-              src="./images/cashless-payment.jpg"
-              alt="person pays by bank
+                width="360"
+                height="300"
+              />
+              <h2 class="design-subtitle">Banking App Interface Concept</h2>
+              <p class="design-text">App</p>
+            </li>
+            <li class="design-item">
+              <img
+                class="design-img"
+                src="./images/cashless-payment.jpg"
+                alt="person pays by bank
             transfer"
-              width="360"
-              height="300"
-            />
-            <h2 class="design-subtitle">Cashless Payment</h2>
-            <p class="design-text">Marketing</p>
-          </li>
-          <li class="design-item">
-            <img
-              class="design-img"
-              src="./images/meditaion-app.jpg"
-              alt="the computer with the
+                width="360"
+                height="300"
+              />
+              <h2 class="design-subtitle">Cashless Payment</h2>
+              <p class="design-text">Marketing</p>
+            </li>
+            <li class="design-item">
+              <img
+                class="design-img"
+                src="./images/meditaion-app.jpg"
+                alt="the computer with the
             inscription on the screen returns to normal phone with a text on the
             screen life in the future"
-              width="360"
-              height="300"
-            />
-            <h2 class="design-subtitle">Meditaion App</h2>
-            <p class="design-text">App</p>
-          </li>
-          <li class="design-item">
-            <img
-              class="design-img"
-              src="./images/taxi-service.jpg"
-              alt="a man driving and a phone
+                width="360"
+                height="300"
+              />
+              <h2 class="design-subtitle">Meditaion App</h2>
+              <p class="design-text">App</p>
+            </li>
+            <li class="design-item">
+              <img
+                class="design-img"
+                src="./images/taxi-service.jpg"
+                alt="a man driving and a phone
             with a taxi application"
-              width="360"
-              height="300"
-            />
-            <h2 class="design-subtitle">Taxi Service</h2>
-            <p class="design-text">Marketing</p>
-          </li>
-          <li class="design-item">
-            <img
-              class="design-img"
-              src="./images/screen-illustrations.jpg"
-              alt="four planet screen
+                width="360"
+                height="300"
+              />
+              <h2 class="design-subtitle">Taxi Service</h2>
+              <p class="design-text">Marketing</p>
+            </li>
+            <li class="design-item">
+              <img
+                class="design-img"
+                src="./images/screen-illustrations.jpg"
+                alt="four planet screen
             illustrations"
-              width="360"
-              height="300"
-            />
-            <h2 class="design-subtitle">Screen Illustrations</h2>
-            <p class="design-text">Design</p>
-          </li>
-          <li class="design-item">
-            <img
-              class="design-img"
-              src="./images/online-courses.jpg"
-              alt="a girl in an orange
+                width="360"
+                height="300"
+              />
+              <h2 class="design-subtitle">Screen Illustrations</h2>
+              <p class="design-text">Design</p>
+            </li>
+            <li class="design-item">
+              <img
+                class="design-img"
+                src="./images/online-courses.jpg"
+                alt="a girl in an orange
             sweater and glasses and a gray hat smiles while looking at the
             phone"
-              width="360"
-              height="300"
-            />
-            <h2 class="design-subtitle">Online Courses</h2>
-            <p class="design-text">Marketing</p>
-          </li>
-          <li class="design-item">
-            <img
-              class="design-img"
-              src="./images/instagram-stories-concept.jpg"
-              alt="six types of
+                width="360"
+                height="300"
+              />
+              <h2 class="design-subtitle">Online Courses</h2>
+              <p class="design-text">Marketing</p>
+            </li>
+            <li class="design-item">
+              <img
+                class="design-img"
+                src="./images/instagram-stories-concept.jpg"
+                alt="six types of
             instagram stories concept"
-              width="360"
-              height="300"
-            />
-            <h2>Instagram Stories Concept</h2>
-            <p class="design-text">Design</p>
-          </li>
-          <li class="design-item">
-            <img
-              class="design-img"
-              src="./images/organic-food.jpg"
-              alt="a girl in classic gray
+                width="360"
+                height="300"
+              />
+              <h2 class="design-subtitle">Instagram Stories Concept</h2>
+              <p class="design-text">Design</p>
+            </li>
+            <li class="design-item">
+              <img
+                class="design-img"
+                src="./images/organic-food.jpg"
+                alt="a girl in classic gray
             pants and a long shirt carries fruits and vegetables in a shopping
             bag"
-              width="360"
-              height="300"
-            />
-            <h2 class="design-subtitle">Organic Food</h2>
-            <p class="design-text">Web Site</p>
-          </li>
-          <li class="design-item">
-            <img
-              class="design-img"
-              src="./images/fresh-coffee.jpg"
-              alt="barista draws a spikelet on
+                width="360"
+                height="300"
+              />
+              <h2 class="design-subtitle">Organic Food</h2>
+              <p class="design-text">Web Site</p>
+            </li>
+            <li class="design-item">
+              <img
+                class="design-img"
+                src="./images/fresh-coffee.jpg"
+                alt="barista draws a spikelet on
             coffee"
-              width="360"
-              height="300"
-            />
-            <h2 class="design-subtitle">Fresh Coffee</h2>
-            <p class="design-text">Web Site</p>
-          </li>
-        </ul>
+                width="360"
+                height="300"
+              />
+              <h2 class="design-subtitle">Fresh Coffee</h2>
+              <p class="design-text">Web Site</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="./index.html"
+          ><span class="accent">Web</span>Studio</a
+        >
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
 
     <!-- Footer -->
 
