@@ -38,9 +38,7 @@ h6 {
     margin-top: 0;
 }
 
-.header {
-    background-color: var(--color-main-bg);
-}
+
 
 .section {
     padding: 120px 0;
@@ -58,6 +56,34 @@ h6 {
 
 
 
+/* Header */
+
+.header {
+    background-color: var(--color-main-bg);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.header-address {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 /* Navigation */
 
 .logo {
@@ -69,6 +95,8 @@ h6 {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: var(--leter-spacing-logo);
+    padding: 24px 0;
+    margin-right: 56px;
 }
 
 .accent {
@@ -79,6 +107,7 @@ h6 {
     color: var(--color-main);
     font-weight: 500;
     text-decoration: none;
+    padding: 24px 20px;
 }
 
 .nav-link:active {
@@ -101,6 +130,7 @@ h6 {
     color: var(--color-secondary);
     text-decoration: none;
     font-style: normal;
+
 }
 
 .address-link:active {
@@ -129,6 +159,7 @@ h6 {
     line-height: 1.07;
     color: var(--color-main-bg);
     margin-bottom: 48px;
+    text-align: center;
 }
 
 .hero-button {
@@ -138,6 +169,8 @@ h6 {
     padding: 16px 32px;
     cursor: pointer;
     letter-spacing: var(--leter-spacing-button);
+    margin: 0 auto;
+    display: block;
 }
 
 .hero-button:hover {
@@ -157,11 +190,21 @@ h6 {
 
 /* Features, Execution, Team */
 
+.execution-list {
+    display: flex;
+    gap: 24px;
+}
+
+.execution-item {
+    flex-basis: calc((100% - 48) / 3);
+}
+
 .section-title {
     font-size: 36px;
     line-height: 1.11;
     text-transform: capitalize;
     margin-bottom: 72px;
+    text-align: center;
 }
 
 .section-subtitle {
@@ -182,6 +225,19 @@ h6 {
 
 .team {
     background-color: #F4F4FD;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-item {
+    flex-basis: calc((100% - 48px) / 4);
+}
+
+.employee {
+    text-align: center;
 }
 
 
@@ -248,7 +304,7 @@ h6 {
 }
 
 .button-website {
-    width: 116px;
+    width: 118px;
     height: 48px;
 }
 
@@ -265,6 +321,12 @@ h6 {
 .button-marketing {
     width: 126px;
     height: 48px;
+}
+
+.hero-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 
 
@@ -284,4 +346,21 @@ h6 {
 
 .design-text {
     color: var(--color-secondary);
+}
+
+.design-list {
+    display: flex;
+    row-gap: 48px;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.design-item {
+    flex-basis: calc((100% - 48px) /9);
+}
+
+.design-examples {
+    text-align: center;
 }
