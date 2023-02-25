@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
+    margin: 0;
 }
 
 
@@ -222,6 +222,10 @@ h6 {
     gap: 24px;
 }
 
+.features-item {
+    width: 264px;
+}
+
 .section-text {
     color: var(--color-secondary);
     margin: 0;
@@ -282,8 +286,15 @@ h6 {
 
 /* Hero */
 
-.hero-portfolio {
-    padding: 96px 0 72px 0;
+.search-portfolio {
+    padding: 96px 0 120px 0;
+}
+
+.search-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-bottom: 72px;
 }
 
 .search {
@@ -295,6 +306,7 @@ h6 {
     cursor: pointer;
     color: var(--color-accent);
     letter-spacing: var(--leter-spacing-button);
+    margin: 0;
 }
 
 .search:hover {
@@ -310,6 +322,7 @@ h6 {
 .button-all {
     width: 69px;
     height: 48px;
+
 }
 
 .button-website {
@@ -330,20 +343,6 @@ h6 {
 .button-marketing {
     width: 126px;
     height: 48px;
-}
-
-.hero-list {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-}
-
-
-
-/* Design */
-
-.section-design {
-    padding-top: 0;
 }
 
 .design-subtitle {
