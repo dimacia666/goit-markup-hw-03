@@ -362,13 +362,11 @@ h6 {
     display: flex;
     row-gap: 48px;
     column-gap: 24px;
-    flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .design-item {
-    flex-basis: calc((100% - 48px) /3);
+    flex-basis: calc((100% - 48px)/3);
     background-color: var(--color-main-bg);
     border: 1px solid #E7E9FC;
 }
